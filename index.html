@@ -14,14 +14,17 @@
                 <h1 class="todo-heading">Todo App.</h1>
                 <p class="app-text">Dream it, plan it, do it.</p>
             </div>    
-            <form class="form">
-                <input type="text" placeholder="Enter your Todo here" id="todoAdd" class="todo-add-input" />
-                <button type="submit" class="add-button">Add</button>
-            </form>
-            <div class="todos-conatiner">
-                <div class="search-container">
-                    <input type="text" id="todoSearch" class="todo-search-input" placeholder="Enter Todo" />
-                    <button type="button" class="search-button">Search</button>
+            <div class="form">
+                <input type="text" placeholder="Enter your task here" id="taskInput" class="todo-add-input" />
+                <button type="button" class="add-button" id="addButton">Add</button>
+            </div>
+            <div class="todos-container">
+                <div class="todos-header-container">
+                    <p class="header-title">Your Tasks</p>
+                    <div class="search-container">
+                        <input type="text" id="todoSearch" class="todo-search-input" placeholder="Enter Todo" />
+                        <button type="button" class="search-button" id="searchButton">Search</button>
+                    </div>
                 </div>
                 <ul class="todos-list-container" id="todosListContainer"></ul>
             </div>

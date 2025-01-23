@@ -65,7 +65,7 @@ body, html {
     padding: 10px;
     border-radius: 8px;
 }
-.add-button {
+.add-button, .search-button {
     height: 40px;
     width: 25%;
     align-self: flex-end;
@@ -75,7 +75,54 @@ body, html {
     color: rgb(37, 34, 36);
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid rgb(37, 34, 36);
+    border-radius: 10px;
+}
+.todos-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.header-title {
+    color: rgb(37, 34, 36);
+    font-weight: 600;
+    font-size: 20px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.todo-search-input {
+    height: 40px;
+    width: 75%;
+    border: none;
+    color: rgb(37, 34, 36);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.todos-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 
 @media screen and (min-width: 580px) {
     .form {
