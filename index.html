@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todos App</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/3adfd62e11.js" crossorigin="anonymous"></script>
 </head>
@@ -11,25 +11,28 @@
     <div class="bg-container">
         <div class="main-container">
             <div class="heading-container">
-                <h1 class="todo-heading">Todo App.</h1>
-                <p class="app-text">Dream it, plan it, do it.</p>
+                <div class="head-texts-container">
+                    <h1 class="todo-heading">Todo App.</h1>
+                    <p class="app-text"><em>Dream it, plan it, do it.</em></p>
+                    <div id="statusBar">
+                        <div id="status"></div>
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <p id="stats">0 / 0</p>
+                </div>
             </div>    
             <div class="form">
                 <input type="text" placeholder="Enter your task here" id="taskInput" class="todo-add-input" />
                 <button type="button" class="add-button" id="addButton">Add</button>
             </div>
             <div class="todos-container">
-                <div class="todos-header-container">
-                    <p class="header-title">Your Tasks</p>
-                    <div class="search-container">
-                        <input type="text" id="todoSearch" class="todo-search-input" placeholder="Enter Todo" />
-                        <button type="button" class="search-button" id="searchButton">Search</button>
-                    </div>
-                </div>
+                <p class="header-title">Your Tasks</p>
                 <ul class="todos-list-container" id="todosListContainer"></ul>
             </div>
         </div>
     </div>
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>
